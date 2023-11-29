@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".PatientForm">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+        android:text="PATIENT DETAILS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text=" Name"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        android:hint="Enter Patient Name"
+        android:padding="10dp" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text=" Age"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:id="@+id/age"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:background="@drawable/border"
+        android:hint="Enter Patient Age"
+        android:padding="10dp" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text=" Case Number"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/caseNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/border"
+        android:textColor="@color/black"
+        android:hint="Enter Patient Case Number"
+        android:padding="10dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/newPatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_bg"
+        android:drawableEnd="@drawable/next"
+        android:paddingEnd="20dp"
+        android:text="Register" />
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
